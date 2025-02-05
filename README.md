@@ -1,71 +1,41 @@
-# NextEvents
-
-NextEvents is a web application built with Next.js that allows users to view upcoming events and browse past event data. The platform provides a seamless and interactive experience for discovering events, making it easy to find and track both current and past events.
-
-## Features
-
-- **Event Display**: Users can view upcoming events on the homepage.
-- **Event Archive**: Browse past events by selecting a specific year and month.
-- **User-friendly Interface**: Simple and intuitive design to navigate through events.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-To get started with the project, follow the instructions below.
+First, run the development server:
 
-### Prerequisites
-
-Make sure you have `Node.js` and `npm` installed. If not, download and install them from the [official Node.js website](https://nodejs.org/).
-
-### Installation
-
-1. Clone the repository:
-```bash
- git clone https://github.com/your-username/NextEvents.git
-```
-2. Navigate to the project directory:
-```bash
-cd NextEvents
-```
-3. Install the dependencies:
-```bash
-npm install
-```
----
-## Running the Development Server
-To run the application in development mode, use the following command:
 ```bash
 npm run dev
+# or
+yarn dev
 ```
-**This will start the development server on http://localhost:3000.**
----
-### Building for Production
-To build the app for production:
-```bash
-npm run build
-```
-After building, you can start the production server with:
-```bash
-npm start
-```
----
-## Project Structure
-The project follows a standard Next.js structure:
-- pages/ - Contains the React pages for routing and rendering events.
-- components/ - Reusable UI components.
-- public/ - Static assets like images and icons.
-- styles/ - CSS and styling files.
----
-## Contributing
-Feel free to fork the repository and submit pull requests! If you're interested in contributing, here are a few guidelines:
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Make sure your code follows the style guidelines.
-4. Submit a pull request describing your changes.
----
-## License
 
-This project is licensed for **private use only**. It is not licensed for commercial purposes or redistribution. You may use and modify the code for personal projects, but not for commercial endeavors.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-
-
+## New Features
+- **MongoDB Integration**: The project now connects to MongoDB for storing and retrieving event-related data.
+- **Email Insertion with Error Handling**: Users can insert their email addresses with proper error handling to ensure valid input.
+- **Status Window**: A React-style status window is displayed at the bottom of the page, showing the status of actions (success, pending, or failed).
+- **Add Comments**: Users can now add comments to events, enhancing interaction and engagement with the platform.
